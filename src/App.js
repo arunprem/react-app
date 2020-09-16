@@ -7,17 +7,21 @@ import Navbar from "./component/layout/Navbar";
 import Projectitems from "./component/project/Projectitems";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Addproject from "./component/project/Addproject";
+import { Provider } from "react-redux";
+import store from "./store";
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Navbar />
+    <Provider store={store}>
+      <Router>
+        <div className="App">
+          <Navbar />
 
-        <Route exact path="/dashboard" component={Dashboard} />
-        <Route exact path="/addProject" component={Addproject} />
-      </div>
-    </Router>
+          <Route exact path="/dashboard" component={Dashboard} />
+          <Route exact path="/addProject" component={Addproject} />
+        </div>
+      </Router>
+    </Provider>
   );
 }
 
