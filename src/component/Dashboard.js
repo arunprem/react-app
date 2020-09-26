@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Navbar from "./layout/Navbar";
+
 import CreateProjectButton from "./project/CreateProjectButton";
 import Projectitems from "./project/Projectitems";
 import { connect } from "react-redux";
