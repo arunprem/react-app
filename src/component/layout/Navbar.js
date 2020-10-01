@@ -6,7 +6,7 @@ class Navbar extends Component {
       <div>
         <nav className="navbar navbar-expand-sm navbar-dark bg-primary mb-4">
           <div className="container">
-            <a className="navbar-brand" href="Dashboard.html">
+            <a className="navbar-brand" href="/dashboard">
               Personal Project Management Tool
             </a>
             <button
