@@ -107,7 +107,7 @@ class UpdateProject extends Component {
                     value={this.state.projectIdentifier}
                     disabled
                   />
-                  {errors.projectName && (
+                  {errors.projectIdentifier && (
                     <div className="invalid-feedback">
                       {errors.projectIdentifier}
                     </div>
@@ -123,7 +123,7 @@ class UpdateProject extends Component {
                     name="description"
                     onChange={this.onChange}
                   />
-                  {errors.projectName && (
+                  {errors.description && (
                     <div className="invalid-feedback">{errors.description}</div>
                   )}
                 </div>
@@ -138,7 +138,7 @@ class UpdateProject extends Component {
                     value={this.state.start_date}
                     onChange={this.onChange}
                   />
-                  {errors.projectName && (
+                  {errors.start_date && (
                     <div className="invalid-feedback">{errors.start_date}</div>
                   )}
                 </div>
@@ -153,7 +153,7 @@ class UpdateProject extends Component {
                     value={this.state.end_date}
                     onChange={this.onChange}
                   />
-                  {errors.projectName && (
+                  {errors.end_date && (
                     <div className="invalid-feedback">{errors.end_date}</div>
                   )}
                 </div>

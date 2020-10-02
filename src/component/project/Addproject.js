@@ -91,7 +91,7 @@ class Addproject extends Component {
                       value={this.state.projectIdentifier}
                       onChange={this.onChange}
                     />
-                    {errors.projectName && (
+                    {errors.projectIdentifier && (
                       <div className="invalid-feedback">
                         {errors.projectIdentifier}
                       </div>
@@ -108,7 +108,7 @@ class Addproject extends Component {
                       value={this.state.description}
                       onChange={this.onChange}
                     ></textarea>
-                    {errors.projectName && (
+                    {errors.description && (
                       <div className="invalid-feedback">
                         {errors.description}
                       </div>
@@ -125,7 +125,7 @@ class Addproject extends Component {
                       value={this.state.start_date}
                       onChange={this.onChange}
                     />
-                    {errors.projectName && (
+                    {errors.start_date && (
                       <div className="invalid-feedback">
                         {errors.start_date}
                       </div>
@@ -142,7 +142,7 @@ class Addproject extends Component {
                       value={this.state.end_date}
                       onChange={this.onChange}
                     />
-                    {errors.projectName && (
+                    {errors.end_date && (
                       <div className="invalid-feedback">{errors.end_date}</div>
                     )}
                   </div>
