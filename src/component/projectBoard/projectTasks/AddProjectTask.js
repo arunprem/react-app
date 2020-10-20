@@ -45,7 +45,7 @@ import PropTypes from "prop-types";
             priority: this.state.priority,
             dueDate: this.state.dueDate,
         }
-       console.log(this.state.projectIdentifier);
+
         this.props.addProjectTask(this.state.projectIdentifier,newTask,this.props.history);
      }
 
